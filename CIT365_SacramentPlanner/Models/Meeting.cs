@@ -12,6 +12,8 @@ namespace CIT365_SacramentPlanner.Models
         [DataType(DataType.Date)]
         [Required]
         public DateTime MeetingDate { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         [Required]
         public string Conductor { get; set; }
         [Range(1,341)]
@@ -24,12 +26,22 @@ namespace CIT365_SacramentPlanner.Models
         public int RestHymnNumber { get; set; }
         [Required]
         public string ClosingHymn { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         [Required]
         public string OpeningPrayer { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         [Required]
         public string ClosingPrayer { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         public string SpeakerOne { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         public string SpeakerTwo { get; set; }
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [StringLength(100, MinimumLength = 3)]
         public string SpeakerThree { get; set; }
 
     }
