@@ -7,7 +7,7 @@ using System.Text.Encodings.Web;
 
 namespace CIT365_SacramentPlanner.Controllers
 {
-    public class MeetingController : Controller
+    public class MeetingsController : Controller
     {
         public IActionResult Index()
         {

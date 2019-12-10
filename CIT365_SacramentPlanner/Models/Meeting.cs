@@ -10,13 +10,23 @@ namespace CIT365_SacramentPlanner.Models
     {
         public int Id { get; set; }
         [DataType(DataType.Date)]
+        [Required]
         public DateTime MeetingDate { get; set; }
+        [Required]
         public string Conductor { get; set; }
-        public string OpeningHymn { get; set; }
-        public string SacramentHymn { get; set; }
-        public string RestHymn { get; set; }
+        [Range(1,341)]
+        [Required]
+        public int OpeningHymnNumber { get; set; }
+        [Range(1, 341)]
+        [Required]
+        public int SacramentHymnNumber { get; set; }
+        [Range(1, 341)]
+        public int RestHymnNumber { get; set; }
+        [Required]
         public string ClosingHymn { get; set; }
+        [Required]
         public string OpeningPrayer { get; set; }
+        [Required]
         public string ClosingPrayer { get; set; }
         public string SpeakerOne { get; set; }
         public string SpeakerTwo { get; set; }
