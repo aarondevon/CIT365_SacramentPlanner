@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CIT365_SacramentPlanner.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CIT365_SacramentPlanner
 {
@@ -31,6 +33,8 @@ namespace CIT365_SacramentPlanner
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<MeetingContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MeetingContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
