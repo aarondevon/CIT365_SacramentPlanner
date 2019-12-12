@@ -66,6 +66,22 @@ body {
     height:auto;
 }
 
-a.navbar-brand {
+.navbar-light .navbar-brand {
     color: #9D699D;
+}
+
+h1 {
+    color: #F29422;
+}
+
+a {
+    color: #51CBC0;
+}
+
+.delete {
+    color: #F24535;
+}
+
+th {
+    color: #3F4262;
 }
