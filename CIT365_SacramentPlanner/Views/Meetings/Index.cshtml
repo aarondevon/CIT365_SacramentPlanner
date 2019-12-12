@@ -19,31 +19,16 @@
                 @Html.DisplayNameFor(model => model.Conductor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OpeningHymnNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SacramentHymnNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RestHymnNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ClosingHymn)
+                Hymns
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.OpeningPrayer)
             </th>
             <th>
+                Speakers
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.ClosingPrayer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SpeakerOne)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SpeakerTwo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SpeakerThree)
             </th>
             <th></th>
         </tr>
@@ -59,30 +44,25 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.OpeningHymnNumber)
-            </td>
-            <td>
+                <br />
                 @Html.DisplayFor(modelItem => item.SacramentHymnNumber)
-            </td>
-            <td>
+                <br />
                 @Html.DisplayFor(modelItem => item.RestHymnNumber)
-            </td>
-            <td>
+                <br />
                 @Html.DisplayFor(modelItem => item.ClosingHymn)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.OpeningPrayer)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClosingPrayer)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.SpeakerOne)
-            </td>
-            <td>
+                <br />
                 @Html.DisplayFor(modelItem => item.SpeakerTwo)
-            </td>
-            <td>
+                <br />
                 @Html.DisplayFor(modelItem => item.SpeakerThree)
+            </td>          
+            <td>
+                @Html.DisplayFor(modelItem => item.ClosingPrayer)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
