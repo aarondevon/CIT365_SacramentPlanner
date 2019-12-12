@@ -14,7 +14,7 @@ namespace CIT365_SacramentPlanner.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<MeetingContext>>()))
             {
-                // Look for any movies.
+               
                 if (context.Meeting.Any())
                 {
                     return;   // DB has been seeded
