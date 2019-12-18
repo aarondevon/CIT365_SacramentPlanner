@@ -26,7 +26,7 @@ namespace CIT365_SacramentPlanner.Models
         [Required]
         public int SacramentHymnNumber { get; set; }
         [Display(Name = "Rest Hymn")]
-        [RegularExpression(@"[1-341]")]
+        [Range(1, 341)]
         public int? RestHymnNumber { get; set; }
         [Display(Name = "Closing Hymn")]
         [Range(1, 341)]

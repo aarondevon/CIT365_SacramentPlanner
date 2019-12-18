@@ -85,3 +85,7 @@ a {
 th {
     color: #3F4262;
 }
+
+tr:nth-child(even) {
+    background: #D9D9D9;
+}
