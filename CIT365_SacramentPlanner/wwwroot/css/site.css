@@ -55,7 +55,7 @@ body {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  /* Set the fixed height of the footer here */
+  /* Set the fixed height of the footear here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
@@ -88,4 +88,13 @@ th {
 
 tr:nth-child(even) {
     background: #D9D9D9;
+}
+
+.btn-style {
+    background: #F29422;
+    border: #F29422;
+}
+
+#sure {
+    color: #E64447;
 }
